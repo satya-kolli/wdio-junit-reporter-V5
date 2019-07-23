@@ -3,7 +3,7 @@ import WDIOReporter from '@wdio/reporter'
 
 import { limit } from './utils'
 
-class JunitReporter extends WDIOReporter {
+class JunitV5Reporter extends WDIOReporter {
     constructor (options) {
         super(options)
         this.suiteNameRegEx = this.options.suiteNameFormat instanceof RegExp
@@ -108,4 +108,4 @@ class JunitReporter extends WDIOReporter {
     }
 }
 
-export default JunitReporter
+export default JunitV5Reporter

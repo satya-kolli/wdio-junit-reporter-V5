@@ -1,5 +1,5 @@
 {
-  "name": "wdio-junit-reporter-v5",
+  "name": "wdio-v5-junit-reporter",
   "description": "A WebdriverIO reporter that creates Jenkins compatible XML based JUnit reports",
   "license": "MIT",
   "main": "./build/index",
@@ -7,7 +7,7 @@
     "node": ">= 8.11.0"
   },
   "scripts": {
-    "build": "clean compile",
+    "junit-report-builder": "clean compile",
     "clean": "rimraf ./build",
     "compile": "babel src/ -d build/ --config-file ./babel.config.js",
     "test": "run-s test:*",
@@ -23,7 +23,8 @@
     "wdio",
     "wdio-reporter",
     "junit",
-    "reporter"
+    "reporter",
+    "JunitV5Reporter"
   ],
   "bugs": {
     "url": "https://github.com/webdriverio/webdriverio/issues"
